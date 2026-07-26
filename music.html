@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music | Jclark Santarin</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="scattered-code">&lt;audio&gt;</div>
+    <div class="scattered-code">sound.play()</div>
+    <div class="scattered-code">beat = 120;</div>
+    <div class="scattered-code">// my_music</div>
+    <div class="scattered-code">playAll()</div>
+    <div class="scattered-code">href="music"</div>
+
+    <div class="binary-corner top-left">01001001 01010100</div>
+    <div class="binary-corner bottom-right">01001110 01010101</div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Personal Website</div>
+            <div class="toggle-btn" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html" class="active">Music</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-card">
+            <div class="playlist-banner">
+                <div class="playlist-cover">
+                    <img src="assets/image/jc7.webp" alt="Cover">
+                </div>
+                <div class="playlist-info">
+                    <p class="playlist-label">Playlist</p>
+                    <h1>My Playlist</h1>
+                    <p class="playlist-meta">Jclark • 5 songs • 29 min 36 sec</p>
+                </div>
+            </div>
+
+            <div class="player-controls">
+                <button class="play-btn">▶</button>
+                <button class="ctrl-btn">🔀</button>
+                <button class="ctrl-btn">⬇</button>
+            </div>
+
+            <div class="track-header">
+                <span class="col-num">#</span>
+                <span class="col-title">Title</span>
+                <span class="col-album">Album</span>
+                <span class="col-date">Date added</span>
+            </div>
+
+            <div class="track-list">
+                <div class="track-item">
+                    <span class="col-num">1</span>
+                    <div class="col-title">
+                        <div class="track-thumb">
+                            <img src="assets/image/images.jpg" alt="Moolah">
+                        </div>
+                        <div>
+                            <h4>Moolah</h4>
+                            <p>SCOOP DOGG, Darth</p>
+                        </div>
+                    </div>
+                    <span class="col-album">Moolah</span>
+                    <span class="col-date">14 hours ago</span>
+                    <audio preload="metadata" src="assets/music/moolah.mp3.mp3">
+                </div>
+
+                <div class="track-item">
+                    <span class="col-num">2</span>
+                    <div class="col-title">
+                        <div class="track-thumb">
+                            <img src="assets/image/images (2).jpg" alt="MYSB">
+                        </div>
+                        <div>
+                            <h4>MYSB (Miss You so Bad)</h4>
+                            <p>Kira, OCDawgs</p>
+                        </div>
+                    </div>
+                    <span class="col-album">MYSB (Miss You so Bad)</span>
+                    <span class="col-date">14 hours ago</span>
+                    <audio preload="metadata" src="assets/music/mysb.mp3.mp3">
+                </div>
+
+                <div class="track-item">
+                    <span class="col-num">3</span>
+                    <div class="col-title">
+                        <div class="track-thumb">
+                            <img src="assets/image/images (1).jpg" alt="Summer Crush">
+                        </div>
+                        <div>
+                            <h4>Summer Crush</h4>
+                            <p>HELLMERRY</p>
+                        </div>
+                    </div>
+                    <span class="col-album">Summer Crush</span>
+                    <span class="col-date">14 hours ago</span>
+                    <audio preload="metadata" src="assets/music/summer.mp3.mp3">
+                </div>
+                
+                <div class="track-item">
+                    <span class="col-num">4</span>
+                    <div class="col-title">
+                        <div class="track-thumb">
+                            <img src="assets/image/images (5).jpg" alt="kiss me better">
+                        </div>
+                        <div>
+                            <h4>kiss me better</h4>
+                            <p>Rihanna </p>
+                        </div>
+                    </div>
+                    <span class="col-album">kiss me better</span>
+                    <span class="col-date">2 hours ago</span>
+                    <audio preload="metadata" src="assets/music/Rihanna.mp3.mp3">
+                </div>
+
+                <div class="track-item">
+                    <span class="col-num">5</span>
+                    <div class="col-title">
+                        <div class="track-thumb">
+                            <img src="assets/image/images (6).jpg" alt="banana">
+                        </div>
+                        <div>
+                            <h4>banana</h4>
+                            <p>ga chillerong </p>
+                        </div>
+                    </div>
+                    <span class="col-album">banana</span>
+                    <span class="col-date">1 hours ago</span>
+                    <audio preload="metadata" src="assets/music/Banana.mp3.mp3">
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="bottom-player">
+        <div class="player-left">
+            <div class="player-thumb">
+                <img id="player-cover" src="" alt="Album Art">
+            </div>
+            <div class="player-info">
+                <h5 id="now-title">—</h5>
+                <p id="now-artist">—</p>
+            </div>
+            <button class="like-btn">+</button>
+        </div>
+
+        <div class="player-center">
+            <div class="ctrl-row">
+                <button class="player-ctrl">🔀</button>
+                <button class="player-ctrl">⏮</button>
+                <button class="main-play">▶</button>
+                <button class="player-ctrl">⏭</button>
+                <button class="player-ctrl">🔁</button>
+            </div>
+            <div class="progress-bar">
+                <span class="time">0:00</span>
+                <div class="bar-wrap"><div class="bar-fill"></div></div>
+                <span class="time">0:00</span>
+            </div>
+        </div>
+
+        <div class="player-right">
+            <button class="player-ctrl">🔊</button>
+            <div class="vol-bar"><div class="vol-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- ARTIST / GLASS PLAYER VIEW -->
+    <div class="artist-view" id="artistView">
+        <div class="artist-card">
+            <button class="close-view" id="closeArtistView">×</button>
+            <div class="artist-cover">
+                <img id="artist-big-cover" src="" alt="Artist">
+            </div>
+            <h2 id="artist-big-title">—</h2>
+            <p id="artist-big-name">—</p>
+
+            <div class="artist-progress">
+                <span class="time-small" id="art-time-cur">0:00</span>
+                <div class="art-bar-wrap"><div class="art-bar-fill"></div></div>
+                <span class="time-small" id="art-time-tot">0:00</span>
+            </div>
+
+            <div class="artist-controls">
+                <button class="art-ctrl" id="art-prev">⏮</button>
+                <button class="art-play" id="art-main-play">▶</button>
+                <button class="art-ctrl" id="art-next">⏭</button>
+            </div>
+
+            <div class="artist-volume">
+                <button class="vol-icon">🔊</button>
+                <div class="art-vol-bar"><div class="art-vol-fill"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jclark Laurence P. Santarin | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // === FULL PLAYER + ARTIST GLASS VIEW ===
+        const allAudio = document.querySelectorAll('audio');
+        const playBtn = document.querySelector('.play-btn');
+        const mainPlay = document.querySelector('.main-play');
+        const nowTitle = document.getElementById('now-title');
+        const nowArtist = document.getElementById('now-artist');
+        const playerCover = document.getElementById('player-cover');
+        const barWrap = document.querySelector('.bar-wrap');
+        const barFill = document.querySelector('.bar-fill');
+        const timeDisplay = document.querySelectorAll('.time');
+        const volBar = document.querySelector('.vol-bar');
+        const volFill = document.querySelector('.vol-fill');
+
+        // Artist View Elements
+        const artistView = document.getElementById('artistView');
+        const closeArtistView = document.getElementById('closeArtistView');
+        const artistBigCover = document.getElementById('artist-big-cover');
+        const artistBigTitle = document.getElementById('artist-big-title');
+        const artistBigName = document.getElementById('artist-big-name');
+        const artBarWrap = document.querySelector('.art-bar-wrap');
+        const artBarFill = document.querySelector('.art-bar-fill');
+        const artTimeCur = document.getElementById('art-time-cur');
+        const artTimeTot = document.getElementById('art-time-tot');
+        const artMainPlay = document.getElementById('art-main-play');
+        const artPrev = document.getElementById('art-prev');
+        const artNext = document.getElementById('art-next');
+        const artVolBar = document.querySelector('.art-vol-bar');
+        const artVolFill = document.querySelector('.art-vol-fill');
+
+        let currentAudio = null;
+        let currentIndex = 0;
+
+        allAudio.forEach(a => a.volume = 0.7);
+
+        function updateButtons(playing) {
+            const icon = playing ? '⏸' : '▶';
+            playBtn.textContent = icon;
+            mainPlay.textContent = icon;
+            artMainPlay.textContent = icon;
+        }
+
+        function formatTime(sec) {
+            if (isNaN(sec)) return '0:00';
+            const m = Math.floor(sec / 60);
+            const s = Math.floor(sec % 60);
+            return `${m}:${s < 10 ? '0' : ''}${s}`;
+        }
+
+        document.querySelectorAll('.track-item').forEach((item, idx) => {
+            const audio = item.querySelector('audio');
+            const title = item.querySelector('h4').textContent;
+            const artist = item.querySelector('.col-title p').textContent;
+            const cover = item.querySelector('.track-thumb img').src;
+
+            // Click track row → play song
+            item.addEventListener('click', (e) => {
+                if (e.target.tagName === 'AUDIO') return;
+                allAudio.forEach(a => { a.pause(); a.currentTime = 0; });
+                currentAudio = audio;
+                currentIndex = idx;
+                nowTitle.textContent = title;
+                nowArtist.textContent = artist;
+                playerCover.src = cover;
+                audio.play();
+                updateButtons(true);
+            });
+
+            // Click ARTIST NAME → open glass player view
+            item.querySelector('.col-title p').addEventListener('click', (e) => {
+                e.stopPropagation();
+                artistBigCover.src = cover;
+                artistBigTitle.textContent = title;
+                artistBigName.textContent = artist;
+                artistView.classList.add('active');
+            });
+
+            // Sync progress everywhere
+            audio.addEventListener('timeupdate', () => {
+                if (!currentAudio || currentAudio !== audio) return;
+                const pct = (audio.currentTime / audio.duration) * 100 || 0;
+                barFill.style.width = pct + '%';
+                artBarFill.style.width = pct + '%';
+                timeDisplay[0].textContent = formatTime(audio.currentTime);
+                timeDisplay[1].textContent = formatTime(audio.duration);
+                artTimeCur.textContent = formatTime(audio.currentTime);
+                artTimeTot.textContent = formatTime(audio.duration);
+            });
+
+            // Auto play next
+            audio.addEventListener('ended', () => {
+                barFill.style.width = '0%';
+                artBarFill.style.width = '0%';
+                timeDisplay[0].textContent = '0:00';
+                timeDisplay[1].textContent = '0:00';
+                artTimeCur.textContent = '0:00';
+                artTimeTot.textContent = '0:00';
+                updateButtons(false);
+                const next = document.querySelectorAll('.track-item')[idx + 1];
+                if (next) next.click();
+            });
+        });
+
+        // Close artist view
+        closeArtistView.addEventListener('click', () => {
+            artistView.classList.remove('active');
+        });
+
+        // Sync all play/pause buttons
+        mainPlay.addEventListener('click', () => {
+            if (!currentAudio) return;
+            currentAudio.paused ? currentAudio.play() : currentAudio.pause();
+            updateButtons(!currentAudio.paused);
+        });
+        artMainPlay.addEventListener('click', () => {
+            if (!currentAudio) return;
+            currentAudio.paused ? currentAudio.play() : currentAudio.pause();
+            updateButtons(!currentAudio.paused);
+        });
+
+        // Click progress bars to seek
+        barWrap.addEventListener('click', (e) => {
+            if (!currentAudio) return;
+            const rect = barWrap.getBoundingClientRect();
+            const pos = (e.clientX - rect.left) / rect.width;
+            currentAudio.currentTime = pos * currentAudio.duration;
+        });
+        artBarWrap.addEventListener('click', (e) => {
+            if (!currentAudio) return;
+            const rect = artBarWrap.getBoundingClientRect();
+            const pos = (e.clientX - rect.left) / rect.width;
+            currentAudio.currentTime = pos * currentAudio.duration;
+        });
+
+        // Click volume bars to adjust
+        volBar.addEventListener('click', (e) => {
+            const rect = volBar.getBoundingClientRect();
+            const vol = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+            allAudio.forEach(a => a.volume = vol);
+            volFill.style.width = (vol * 100) + '%';
+            artVolFill.style.width = (vol * 100) + '%';
+        });
+        artVolBar.addEventListener('click', (e) => {
+            const rect = artVolBar.getBoundingClientRect();
+            const vol = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+            allAudio.forEach(a => a.volume = vol);
+            volFill.style.width = (vol * 100) + '%';
+            artVolFill.style.width = (vol * 100) + '%';
+        });
+
+        // Prev / Next in artist view
+        artPrev.addEventListener('click', () => {
+            const prev = document.querySelectorAll('.track-item')[currentIndex - 1];
+            if (prev) prev.click();
+        });
+        artNext.addEventListener('click', () => {
+            const next = document.querySelectorAll('.track-item')[currentIndex + 1];
+            if (next) next.click();
+        });
+    </script>
+
+    <div class="flying-code-container">
+        <div class="flying-code">sudo apt update</div>
+        <div class="flying-code">const hack = true;</div>
+        <div class="flying-code">01001001 01010100</div>
+        <div class="flying-code">system.connect();</div>
+        <div class="flying-code">encrypt(data);</div>
+        <div class="flying-code">while(running) {}</div>
+        <div class="flying-code">// loading...</div>
+        <div class="flying-code">access.granted;</div>
+        <div class="flying-code">byte.stream++;</div>
+        <div class="flying-code">execute.run();</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Jclark Santarin</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="scattered-code">&lt;html&gt;</div>
+    <div class="scattered-code">const code = true;</div>
+    <div class="scattered-code">function run() {}</div>
+    <div class="scattered-code">while(active) {}</div>
+    <div class="scattered-code">IT_STUDENT = 19</div>
+    <div class="scattered-code">// loading...</div>
+
+    <div class="binary-corner top-left">01001001 01010100</div>
+    <div class="binary-corner bottom-right">01001110 01010101</div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Personal Website</div>
+            <div class="toggle-btn" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="music.html">Music</a></li> 
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-card">
+            <h1>Welcome To My <span>Website</span>!</h1>
+            <div class="info-box">
+                <p>I’m Jclark Laurence Santarin, a second-year IT student at Marvelous College of Technology Inc. in Koronadal City. I took up this program to learn more about computers — how they work, and how their hardware and software all come together.</p>
+                <br>
+                <p>There are times I wonder if I picked the right path, since this isn’t exactly what I saw myself doing before. But even so, I’m grateful for how it’s pushing me to try new things, pick up new skills, and see the world from a whole new perspective.</p>
+            </div>
+
+            <!-- NEW BUTTON TO GALLERY -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="gallery.html" class="gallery-btn">📸 View My Gallery</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jclark Laurence P. Santarin | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+
+<div class="flying-code-container">
+    <div class="flying-code">sudo apt update</div>
+    <div class="flying-code">const hack = true;</div>
+    <div class="flying-code">01001001 01010100</div>
+    <div class="flying-code">system.connect();</div>
+    <div class="flying-code">encrypt(data);</div>
+    <div class="flying-code">while(running) {}</div>
+    <div class="flying-code">// loading...</div>
+    <div class="flying-code">access.granted;</div>
+    <div class="flying-code">byte.stream++;</div>
+    <div class="flying-code">execute.run();</div>
+</div>
+</html>

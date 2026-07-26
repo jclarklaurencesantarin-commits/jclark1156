@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Jclark Santarin</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="scattered-code">&lt;gallery&gt;</div>
+    <div class="scattered-code">media.show()</div>
+    <div class="scattered-code">memories = []</div>
+    <div class="scattered-code">// photos_vids</div>
+    <div class="scattered-code">viewAll()</div>
+    <div class="scattered-code">href="gallery"</div>
+
+    <div class="binary-corner top-left">01001001 01010100</div>
+    <div class="binary-corner bottom-right">01001110 01010101</div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Personal Website</div>
+            <div class="toggle-btn" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-card">
+            <h1>My <span>Gallery</span></h1>
+
+            <div class="gallery-grid">
+                <!-- You can add more photos/videos here easily -->
+                <div class="gallery-item">
+                    <img src="assets/image/photo1.jpg" alt="Photo 1" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/image/photo2.jpg" alt="Photo 2" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/image/photo3.jpg" alt="Photo 3" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <video controls loading="lazy">
+                        <source src="assets/video/jc1.mp4.mp4" type="video/mp4">
+                        
+                    </video>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/image/photo4.jpeg" alt="Photo 4" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <video controls loading="lazy">
+                        <source src="assets/video/jc2.mp4.mp4" type="video/mp4">
+                        Your browser does not support video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jclark Laurence P. Santarin | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Jclark Santarin</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="scattered-code">&lt;head&gt;</div>
+    <div class="scattered-code">let me = "IT";</div>
+    <div class="scattered-code">new Student()</div>
+    <div class="scattered-code">age: 19</div>
+    <div class="scattered-code">// about.js</div>
+    <div class="scattered-code">document.write("Hi")</div>
+
+    <div class="binary-corner top-left">01001001 01010100</div>
+    <div class="binary-corner bottom-right">01001110 01010101</div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+    <div class="tech-node"></div>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Personal Website</div>
+            <div class="toggle-btn" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-card">
+            <h1><span>About</span> Me</h1>
+
+            <!-- Profile Picture -->
+            <div class="profile-pic-container">
+                <img src="assets/image/jc.png" alt="Jclark Laurence P. Santarin" class="profile-pic" loading="lazy">
+                <p style="text-align:center; margin-top:0.8rem; font-size:0.9rem; color:#90c8f8;"> Click The photo </p>
+                <p style="text-align:center; margin-top:0.8rem; font-size:0.9rem; color:#90c8f8;"> click all the box </p>
+                <a href="music.html" class="go-music-btn">🎵 Go to My Music</a>
+            </div>
+
+            <!-- ✅ EVERY ROUNDED CARD SHOWS ITS OWN PHOTO -->
+            <div class="profile-card" onclick="openPhoto('assets/image/jc10.png')">
+                <p class="card-label">Full Name</p>
+                <p class="card-value">Jclark Laurence P. Santarin</p>
+            </div>
+
+            <div class="profile-card" onclick="openPhoto('assets/image/jc12.webp')">
+                <p class="card-label">Age & Birthdate</p>
+                <p class="card-value">19 years old<br>June 01, 2007</p>
+            </div>
+
+            <div class="profile-card" onclick="window.open('https://www.google.com/maps/place/Koronadal,+South+Cotabato,+Philippines','_blank')">
+                <p class="card-label">Home Address</p>
+                <p class="card-value">Koronadal, South Cotabato, Philippines</p>
+            </div>
+
+            <div class="profile-card" onclick="openPhoto('assets/image/jc13.png')">
+                <p class="card-label">Course & Year Level</p>
+                <p class="card-value">Bachelor of Science in Information Technology<br>2nd Year Student</p>
+            </div>
+
+            <div class="profile-card" onclick="openPhoto('assets/image/jc11.jpg')">
+                <p class="card-label">Sports</p>
+                <p class="card-value">Basketball</p>
+            </div>
+
+            
+            <div class="photo-popup" id="photoPopup">
+                <div class="popup-content">
+                    <button class="close-popup" onclick="closePhoto()">×</button>
+                    <img id="popupImage" src="" alt="Photo">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jclark Laurence P. Santarin | All Rights Reserved</p>
+    </footer>
+
+    <!-- CIRCULAR ZOOM VIDEO BOX -->
+    <div class="overlay" id="zoomOverlay">
+        <div class="circle-zoom-wrap">
+            <video id="zoomVideo" controls preload="metadata">
+                <source src="assets/video/jclark.mp4.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script>
+        const profilePic = document.querySelector('.profile-pic');
+        const overlay = document.getElementById('zoomOverlay');
+        const circleWrap = document.querySelector('.circle-zoom-wrap');
+        const zoomVideo = document.getElementById('zoomVideo');
+
+        // Click picture → smooth circle zoom + play video
+        profilePic.addEventListener('click', (e) => {
+            e.stopPropagation();
+            overlay.classList.add('active');
+            zoomVideo.currentTime = 0;
+            setTimeout(() => zoomVideo.play(), 350);
+        });
+
+        // Click outside circle → close + stop video
+        overlay.addEventListener('click', (e) => {
+            if (e.target !== circleWrap && e.target !== zoomVideo) {
+                overlay.classList.remove('active');
+                zoomVideo.pause();
+            }
+        });
+
+        // Press Esc → close + stop video
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && overlay.classList.contains('active')) {
+                overlay.classList.remove('active');
+                zoomVideo.pause();
+            }
+        });
+
+        // Mobile menu
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // ✅ OPEN DIFFERENT PHOTO PER CARD
+        function openPhoto(imgSrc) {
+            document.getElementById('popupImage').src = imgSrc;
+            document.getElementById('photoPopup').classList.add('active');
+        }
+        function closePhoto() {
+            document.getElementById('photoPopup').classList.remove('active');
+        }
+        document.getElementById('photoPopup').addEventListener('click', e => {
+            if (e.target.id === 'photoPopup') closePhoto();
+        });
+    </script>
+
+    <div class="flying-code-container">
+        <div class="flying-code">sudo apt update</div>
+        <div class="flying-code">const hack = true;</div>
+        <div class="flying-code">01001001 01010100</div>
+        <div class="flying-code">system.connect();</div>
+        <div class="flying-code">encrypt(data);</div>
+        <div class="flying-code">while(running) {}</div>
+        <div class="flying-code">// loading...</div>
+        <div class="flying-code">access.granted;</div>
+        <div class="flying-code">byte.stream++;</div>
+        <div class="flying-code">execute.run();</div>
+    </div>
+
+</body>
+</html>
